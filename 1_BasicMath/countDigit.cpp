@@ -15,6 +15,9 @@ int main(){
     int n;
     cin>>n;
     int c = countDigit(n);
+
+    // int c = (int)log10(n)+1;
+
     cout<<c<<"\n";
     return 0;
 }
