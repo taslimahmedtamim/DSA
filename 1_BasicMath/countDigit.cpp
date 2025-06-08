@@ -10,13 +10,14 @@ int countDigit(int n){
     }
     return count;
 }
+// Time complexity : O(log10(n))
 
 int main(){
     int n;
     cin>>n;
     int c = countDigit(n);
 
-    // int c = (int)log10(n)+1;
+    // int c = (int)log10(n)+1; //another way to solve
 
     cout<<c<<"\n";
     return 0;

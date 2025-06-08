@@ -10,6 +10,7 @@ void reverseNum(int n){
     }
     cout<<s;
 }
+// Time complexity : O(log10(n))
 
 int main(){
     int n;

@@ -10,6 +10,7 @@ int reverseNum(int n){
     }
     return s;
 }
+// Time complexity : O(log10(n))
 
 int main(){
     int n;

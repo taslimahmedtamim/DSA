@@ -18,7 +18,7 @@ bool isPrimeBruteforce(int n){
         return false;
     }
 }
-//-->O(n)
+// Time complexity : O(n)
 
 bool isPrimeOptimized(int n){
     int count = 0;
@@ -36,7 +36,7 @@ bool isPrimeOptimized(int n){
         return false;
     }
 }
-//-->O(sqrt(n))
+// Time complexity : O(sqrt(n))
 
 int main(){
     int n;

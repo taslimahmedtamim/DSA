@@ -18,6 +18,7 @@ bool isPrime(int n){
         return false;
     }
 }
+// Time complexity : O(sqrt(n))
 
 int main(){
     int n;
@@ -29,3 +30,4 @@ int main(){
     }
     return 0;
 }
+// Total time complexity : O(n * sqrt(n))
