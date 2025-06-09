@@ -18,9 +18,7 @@ void selectionSort_DecreasingOrder(int n, int arr[]){
     }
 }
 
-void selectionSort_NonDecreasingOrder(int n, int arr[]){
 
-}
 
 int main(){
     int n;
