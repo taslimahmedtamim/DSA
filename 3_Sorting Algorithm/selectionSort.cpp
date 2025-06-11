@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void selectionSort_DecreasingOrder(int n, int arr[]){
+void selectionSort_AscendingOrder(int n, int arr[]){
     for(int i = 0; i<n-1; i++){
         int mindex = i;
         for(int j = i; j<=n-1; j++){
@@ -27,7 +27,7 @@ int main(){
     for(int i = 0; i<n; i++){
         cin>>arr[i];
     }
-    selectionSort_DecreasingOrder(n, arr);
+    selectionSort_AscendingOrder(n, arr);
 
     return 0;
 }

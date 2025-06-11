@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void insertionSort_DecreasingOrder(int n, int arr[]){
+void insertionSort_AscendingOrder(int n, int arr[]){
     for(int i = 1; i<n; i++){
         int temp = arr[i];
         int j = i-1;
@@ -17,7 +17,7 @@ void insertionSort_DecreasingOrder(int n, int arr[]){
     }
 }
 
-void insertionSort_NonDecreaseingOrder(int n, int arr[]){
+void insertionSort_DecreaseingOrder(int n, int arr[]){
 
 }
 
@@ -30,8 +30,8 @@ int main(){
         cin>>arr[i];
     }
 
-    insertionSort_DecreasingOrder(n, arr);
-    insertionSort_NonDecreaseingOrder(n, arr);
+    insertionSort_AscendingOrder(n, arr);
+    insertionSort_DecreaseingOrder(n, arr);
 
     return 0;
 }

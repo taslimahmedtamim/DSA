@@ -1,14 +1,19 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void bubbleSort_DecreasingOrder(int n, int arr[]){
+void bubbleSort_AscendingOrder(int n, int arr[]){
+    int swap = 0;
     for(int i = 0; i<n-1; i++){
         for(int j = 0; j<n-1-i; j++){
             if(arr[j]>arr[j+1]){
                 int temp = arr[j];
                 arr[j] = arr[j+1];
                 arr[j+1] = temp;
+                swap = 1;
             }
+        }
+        if(swap == 0){
+            break;
         }
     }
 
@@ -17,7 +22,7 @@ void bubbleSort_DecreasingOrder(int n, int arr[]){
     }
 }
 
-void bubbleSort_NonDecreasingOrder(int n, int arr[]){
+void bubbleSort_DecreasingOrder(int n, int arr[]){
     
 }
 
@@ -30,7 +35,7 @@ int main(){
         cin>>arr[i];
     }
 
-    bubbleSort_DecreasingOrder(n, arr);
+    bubbleSort_AscendingOrder(n, arr);
 
     return 0;
 }
