@@ -49,6 +49,7 @@ int main(){
     // int gcd = gcdBruteForce(n1,n2);
     // int gcd = gcdBetter(n1, n2);
     int gcd = gcdBest_EuclideanAlgorithm(n1, n2);
+    // int gcd = __gcd(n1,n2); // Time complexity : O(logn)
     cout<<gcd;
     return 0;
 }
