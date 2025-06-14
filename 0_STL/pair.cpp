@@ -25,3 +25,23 @@ int main(){
     }
     return 0;
 }
+
+void vector_pair(){
+    vector<pair<int, int>> v;
+    int n;
+    cin>>n;
+    for(int i = 0; i<n; i++){
+        int x,y;
+        cin>>x>>y;
+        v.push_back({x,y});
+        // v.push_back(make_pair(x,y));
+    }
+    printVector(v);
+}
+
+void printVector(vector<pair<int,int>>&v){
+    for(int i = 0; i<v.size(); i++){
+        cout<<v[i].first<<" "<<v[i].second<<"\n";
+
+    }
+}

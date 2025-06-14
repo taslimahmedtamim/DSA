@@ -15,9 +15,13 @@ void merge(vector<int>& a, int left, int mid, int right) {
     
     while (i < l && j < r) {
         if (leftA[i] <= rightA[j]) {
-            a[k++] = leftA[i++];
+            a[k] = leftA[i];
+            k++;
+            i++;
         } else {
-            a[k++] = rightA[j++];
+            a[k] = rightA[j];
+            k++;
+            j++;
         }
     }
 
@@ -46,14 +50,17 @@ int main() {
     int n;
     cin >> n;
     vector<int> arr(n);
-    for (int i = 0; i < n; i++)
+    
+    for (int i = 0; i < n; i++){
         cin >> arr[i];
+    }
 
     mergeSort(arr, 0, n - 1);
 
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++){
         cout << arr[i] << " ";
-    cout << endl;
+    }
+    
 
     return 0;
 }

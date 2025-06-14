@@ -54,7 +54,13 @@ int main(){
     printVector(v);
     // initializeVector();
 
-
-
     return 0;
+}
+
+void array_of_vector(){
+
+}
+
+void vector_of_vector(){
+    
 }
