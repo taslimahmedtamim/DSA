@@ -13,7 +13,7 @@ void initializeVector(){
     vector<int> v (5);//initial value is 0
     v.push_back(7);// insert an element in the last 
     printVector(v);
-    vector<int> v1 (5, 7); // (size, values of every index)
+    vector<int> v1 (5, 7); // preinitialize with values (size, values of every index)
     v.pop_back();// remove last value
     vector<int> v2 = v; //-->O(n)
     /*
@@ -58,7 +58,20 @@ int main(){
 }
 
 void array_of_vector(){
-
+    vector<int>v[10]; // 10 vector of 0 size v[1,......]
+    for(int i = 0; i<10; i++){
+        int n;
+        cin>>n;
+        for(int j = 0; j<n; j++){
+            int x;
+            cin>>x;
+            v[i].push_back(x); // i th vector
+        }
+    }
+    for(int i = 0; i<10; i++){
+        printVector(v[i]);
+    }
+    cout<<v[0][0]; // access o th vector o th index element
 }
 
 void vector_of_vector(){

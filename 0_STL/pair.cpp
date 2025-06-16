@@ -23,11 +23,17 @@ int main(){
     for(int i = 0; i<3; i++){
         cout<<p_arr[i].first<<" "<<p_arr[i].second<<"\n";
     }
+
+    pair<pair<int,int>,string> par;
+    par.first.first = 0;
+    par.first.second = 7;
+    par.second = "Tamim"; 
     return 0;
 }
 
 void vector_pair(){
     vector<pair<int, int>> v;
+    // vector<pair<int,int>> v = {{1,2},{2,3},{3,4}};
     int n;
     cin>>n;
     for(int i = 0; i<n; i++){
