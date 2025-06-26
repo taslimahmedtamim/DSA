@@ -23,7 +23,7 @@ void bubbleSort_AscendingOrder(int n, int arr[]){
     }
 }
 
-void bubbleSort_DecreasingOrder(int n, int arr[]){
+void bubbleSort_DescendingOrder(int n, int arr[]){
     
 }
 

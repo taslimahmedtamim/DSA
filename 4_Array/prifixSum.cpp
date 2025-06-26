@@ -23,6 +23,7 @@ void bruteForceSum(){
 // Time Complexity: O(n) + O(q*n) => O(n^2)
 
 
+
 void index_based_0(){
     int n;
     cin >> n;

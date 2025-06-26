@@ -17,7 +17,7 @@ void insertionSort_AscendingOrder(int n, int arr[]){
     }
 }
 
-void insertionSort_DecreaseingOrder(int n, int arr[]){
+void insertionSort_DescendingOrder(int n, int arr[]){
 
 }
 
@@ -31,7 +31,7 @@ int main(){
     }
 
     insertionSort_AscendingOrder(n, arr);
-    insertionSort_DecreaseingOrder(n, arr);
+    // insertionSort_DescendingOrder(n, arr);
 
     return 0;
 }
