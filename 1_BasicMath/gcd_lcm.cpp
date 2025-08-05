@@ -43,6 +43,7 @@ int gcdBest_EuclideanAlgorithm(int n1, int n2){
 // Time complexity : O(log∅ min(n1,n2))
 
 
+
 int main(){
     int n1,n2;
     cin>>n1>>n2;
@@ -50,6 +51,8 @@ int main(){
     // int gcd = gcdBetter(n1, n2);
     int gcd = gcdBest_EuclideanAlgorithm(n1, n2);
     // int gcd = __gcd(n1,n2); // Time complexity : O(logn)
-    cout<<gcd;
+    int lcm = (n1*n2)/gcd;
+    cout<<gcd<<endl;
+    cout<<lcm<<endl;
     return 0;
 }
