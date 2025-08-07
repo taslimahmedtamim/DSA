@@ -3,6 +3,7 @@ using namespace std;
 #define fastio ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 #define endl "\n"
 
+// only works in a sorted array
 
 int binarySearch(vector<int>& v, int target){
     
@@ -43,7 +44,6 @@ int main(){
     }
     return 0;
 }
-
 
 // no stack overflow risk & space complexity : O(1)
 // Time complexity : O(log n)
