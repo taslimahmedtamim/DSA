@@ -42,7 +42,7 @@ int main(){
                 minimum = arr[low]; // so the minimum value here is arr[low]
                 rotation = low;
             }
-            low = mid - 1; // then eliminate the left side
+            low = mid + 1; // then eliminate the left side
         }
         else{ // right side is sorted
             if(arr[mid]<minimum){
