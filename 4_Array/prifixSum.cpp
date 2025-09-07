@@ -24,7 +24,7 @@ void bruteForceSum(){
 
 
 
-void index_based_0(){
+void prifixSum_index_based_0(){
     int n;
     cin >> n;
     int arr[n];
@@ -46,7 +46,7 @@ void index_based_0(){
 }
 
 
-void index_based_1(){
+void prifixSum_index_based_1(){
     int n;
     cin>>n;
     int arr[n+1];
@@ -57,6 +57,7 @@ void index_based_1(){
         pf[i] = pf[i-1]+arr[i];
     }
     //-->O(n)
+    
     int q;
     cin>>q;
     while(q--){
@@ -73,8 +74,8 @@ int main(){
 ios::sync_with_stdio(false);
 cin.tie(NULL); cout.tie(NULL);
     // bruteForceSum();
-    // index_based_0();
-    index_based_1();
+    // prifixSum_index_based_0();
+    prifixSum_index_based_1();
 
     return 0;
 }
