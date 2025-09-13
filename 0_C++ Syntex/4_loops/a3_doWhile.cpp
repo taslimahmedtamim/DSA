@@ -2,15 +2,17 @@
 using namespace std;
 #define fastio ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 #define endl "\n"
-#define ll long long
 
 int main(){
     fastio;
+    int i = 0;
+    do{
+        cout<<i<<" ";
+        i++;
 
-    int t;
-    cin>>t;
-    while(t--){
-        
-    }
+    }while(i<10 && i !=0 );
+
+    // first execute what is inside the loop then check for the conditions
+     
     return 0;
 }

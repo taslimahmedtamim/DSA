@@ -7,7 +7,15 @@ cin.tie(NULL); cout.tie(NULL);
 
     int t;
     cin>>t;
-    cin.ignore();
+    
+    cin.ignore(); // without this code will take one less input
+    
+    /*
+        if t = 5; 
+        it will take 4 string as a input
+        reason is when we press enter it takes that enter as one of input
+    */
+
     while(t--){
         string s;
         getline(cin, s);
