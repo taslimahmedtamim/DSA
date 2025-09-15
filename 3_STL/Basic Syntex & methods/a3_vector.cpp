@@ -10,7 +10,7 @@ void printVector(vector<int> v){
 }
 
 void initializeVector(){
-    vector<int> v (5);//initial value is 0
+    vector<int> v (5);//size of vector is 5 and initially all the index value is 0
     v.push_back(7);// insert an element in the last 
     printVector(v);
     vector<int> v1 (5, 7); // preinitialize with values (size, values of every index)
