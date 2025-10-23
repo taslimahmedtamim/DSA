@@ -47,13 +47,24 @@ int gcdBest_EuclideanAlgorithm(int n1, int n2){
 // Time complexity : O(log∅ min(n1,n2))
 
 
+int gcdBest_EuclideanAlgorithm_Recursive(int n1, int n2){
+    if(n2==0) {
+        return n1;
+    }
+    int rem = n1%n2;
+    return gcdBest_EuclideanAlgorithm_Recursive(n2, rem);
+}
+// Time complexity : O(log∅ min(n1,n2))
+
+
 
 int main(){
     int n1,n2;
     cin>>n1>>n2;
     // int gcd = gcdBruteForce(n1,n2);
     // int gcd = gcdBetter(n1, n2);
-    int gcd = gcdBest_EuclideanAlgorithm(n1, n2);
+    // int gcd = gcdBest_EuclideanAlgorithm(n1, n2);
+    int gcd = gcdBest_EuclideanAlgorithm_Recursive(n1, n2);
     // int gcd = __gcd(n1,n2); // Time complexity : O(logn)
     int lcm = (n1*n2)/gcd;
     cout<<gcd<<endl;
