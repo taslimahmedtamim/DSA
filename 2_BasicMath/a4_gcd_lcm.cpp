@@ -1,5 +1,9 @@
 //GCD - > greatest common divisor
 
+/*
+Video Explanation: https://youtu.be/utZcJ0leZ_g?si=JJ9zL6yhrbQlLqtr
+*/
+
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -56,3 +60,5 @@ int main(){
     cout<<lcm<<endl;
     return 0;
 }
+
+
